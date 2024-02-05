@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Library</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="book_name_list">
+            <div id="search_bar">
+                <input id="lib-inp" type="text" placeholder="Enter the author name">
+                <button type="submit" id="search_btn" class="search_btn">Search</button>
+                <div class="loading_img"></div>
+                <h3>Tick the checkbox for selecting the books and press the button below for adding it to your booklist</h3>
+            </div>
+            <h2>Invalid author name or Incorrect spelling of the author</h2>
+            <div class="book_ol">
+                <ol type="1" class="book_list"></ol>
+            </div>
+           <div id="add_btn_div">
+                <button id="add_btn" type="submit">Add to your book list</button>
+           </div>
+        </div>
+        <div class="user_book_list">
+            <h1>Your Book Lists</h1>
+            <div class="fav_list">
+                <ol type="1" class="fav_book_list"></ol>
+            </div>
+        </div>
+       <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
